@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="operation.js"></script>
+</head>
+<body>
+    <div class="alert alert-dark text-bg-grey text-center">
+        <h1>Marksheet</h1> 
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 border border-2 border-black">
+                <label class="form-label">Name</label>
+                <input type="text" id="Name" class="form-control">
+
+                <label class="form-label">Roll Number</label>
+                <input type="text" id="rollnumber" class="form-control">
+
+                <hr>
+                <h4 class="text-center">SUBJECTS</h4>
+                <hr>
+
+                <label class="form-label">JAVA</label>
+                <input type="text" id="java" class="form-control">
+
+                <label class="form-label">C++</label>
+                <input type="text" id="cpp" class="form-control">
+
+                <label class="form-label">JSP</label>
+                <input type="text" id="jsp" class="form-control">
+
+                <label class="form-label">Python</label>
+                <input type="text" id="python" class="form-control">
+
+                <label class="form-label">SQL</label>
+                <input type="text" id="sql" class="form-control">
+
+                <button onclick="result()" class="btn btn-danger mt-4">Result</button>
+
+            </div>
+
+            <div class="col-sm-6 border border-2 border-black">
+                <div class="alert alert-info mt-3"><h4 class="text-danger">Name =<span id="p_name" class="text-black"></span></h4>
+                </div> 
+                <div class="alert alert-info mt-3"><h4 class="text-danger">Roll Number =<span id="p_roll" class="text-black"></span></h4>
+                </div>  
+
+                <div class="alert alert-info mt-3"><h4 class="text-primary-emphasis">JAVA =<span id="p_java"></span></h4>
+                </div>  
+                <div class="alert alert-info mt-3"><h4 class="text-primary-emphasis">C++ =<span id="p_cpp"></span></h4>
+                </div>  
+                <div class="alert alert-info mt-3"><h4 class="text-primary-emphasis">JSP =<span id="p_jsp"></span></h4>
+                </div>  
+                <div class="alert alert-info mt-3"><h4 class="text-primary-emphasis">Python =<span id="p_python"></span></h4>
+                </div>  
+                <div class="alert alert-info mt-3"><h4 class="text-primary-emphasis">SQL =<span id="p_sql"></span></h4>
+                </div>  
+
+                <div class="alert alert-danger mt-3"><h4 class="text-danger">Total =<span id="total"></span></h4>
+                </div>  
+                <div class="alert alert-danger mt-3"><h4 class="text-danger">Percentange =<span id="per"></span></h4>
+                </div>  
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
